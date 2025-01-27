@@ -6,7 +6,8 @@ public class TransformController : MonoBehaviour
     {
         // Move the target GameObject
         var x = Mathf.PingPong(Time.time, 3);
-        var p = new Vector3(0, x, 0);
+        var z = Mathf.PingPong(Time.time, 3);
+        var p = new Vector3(x, 0, z);
         transform.position = p;
 
         //Rotate the target GameObject
