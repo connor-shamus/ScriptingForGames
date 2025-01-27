@@ -11,6 +11,6 @@ public class TransformController : MonoBehaviour
         transform.position = p;
 
         //Rotate the target GameObject
-        transform.Rotate(new Vector3(30, 75, 0) * Time.deltaTime);
+        transform.Rotate(new Vector3(30, 25, 30) * Time.deltaTime);
     }
 }
