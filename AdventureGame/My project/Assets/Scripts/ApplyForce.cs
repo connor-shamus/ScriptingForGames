@@ -7,7 +7,7 @@ public class ApplyForce : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.AddForce(Vector3.right * 500);
+        rb.AddForce(Vector3.right * 300);
     }
 
     void OnCollisionEnter(Collision collision)
