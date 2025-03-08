@@ -38,7 +38,6 @@ public class SimpleCharacterController : MonoBehaviour
         {
             velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
         }
-        Debug.Log(controller.isGrounded);
         
     }
 
