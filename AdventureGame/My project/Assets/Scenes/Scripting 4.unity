@@ -292,12 +292,12 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 1.5
-  m_Radius: 0.5
+  m_Height: 1.44
+  m_Radius: 0.55
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_StepOffset: 0
   m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
+  m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &461200110
 Transform:
@@ -328,6 +328,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  jumpForce: 4
+  gravity: -9.81
 --- !u!1 &511700393
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,7 +541,7 @@ GameObject:
   m_Component:
   - component: {fileID: 763096484}
   - component: {fileID: 763096486}
-  - component: {fileID: 763096485}
+  - component: {fileID: 763096487}
   m_Layer: 0
   m_Name: GrayBackground02
   m_TagString: Untagged
@@ -562,27 +564,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 511700395}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &763096485
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 763096483}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.64, y: 0.64, z: 0.2}
-  m_Center: {x: 0.00000023841858, y: 0, z: 0}
 --- !u!212 &763096486
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -638,6 +619,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &763096487
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763096483}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.64, y: 0.64, z: 0.2}
+  m_Center: {x: 0.00000023841858, y: 0, z: 0}
 --- !u!1 &953152195
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,7 +911,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.64, y: 0.64, z: 0.2}
-  m_Center: {x: 0.00000023841858, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &1284005635
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1188,8 +1190,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18b8546b74fbb0444aae2efb316bda0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key1: 275
-  key2: 276
+  key1: 100
+  key2: 97
   direction1: 0
   direction2: 180
 --- !u!95 &1752152516

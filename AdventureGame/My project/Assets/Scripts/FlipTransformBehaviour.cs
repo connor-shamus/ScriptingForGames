@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 public class FlipTransformBehaviour : MonoBehaviour
 {
-    public KeyCode key1 = KeyCode.RightArrow, key2 = KeyCode.LeftArrow;
+    public KeyCode key1 = KeyCode.LeftArrow, key2 = KeyCode.RightArrow;
     public float direction1 = 0, direction2 = 180;
     
     private void Update()

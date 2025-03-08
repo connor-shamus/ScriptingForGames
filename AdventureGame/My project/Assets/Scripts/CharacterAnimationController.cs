@@ -45,5 +45,11 @@ public class CharacterAnimationController : MonoBehaviour
         {
             animator.SetTrigger("Fall");
         }
+        
+        // Handle wall jumping
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            animator.SetTrigger("WallJump");
+        }
     }
 }
