@@ -9,5 +9,4 @@ public class SimpleTriggerEventBehaviour : MonoBehaviour
         // Trigger the event
         triggerEvent.Invoke();
     }
-    
 }
