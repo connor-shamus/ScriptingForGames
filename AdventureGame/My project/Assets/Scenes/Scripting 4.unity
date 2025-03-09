@@ -1577,6 +1577,7 @@ GameObject:
   - component: {fileID: 1667760491}
   - component: {fileID: 1667760490}
   - component: {fileID: 1667760489}
+  - component: {fileID: 1667760492}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -1715,6 +1716,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667760487}
   m_CullTransparentMesh: 1
+--- !u!95 &1667760492
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667760487}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 533838c71f42074478cd5e2051bffcf6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1742295792
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,6 +1856,14 @@ PrefabInstance:
       value: ScoreCherries
       objectReference: {fileID: 0}
     - target: {fileID: 3493453900446627614, guid: dfc9a0e2d7c6288458d420cc7a5338c3, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3493453900446627614, guid: dfc9a0e2d7c6288458d420cc7a5338c3, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3493453900446627614, guid: dfc9a0e2d7c6288458d420cc7a5338c3, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 128897224}
@@ -1840,6 +1871,30 @@ PrefabInstance:
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 1667760489}
+    - target: {fileID: 3493453900446627614, guid: dfc9a0e2d7c6288458d420cc7a5338c3, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1667760492}
+    - target: {fileID: 3493453900446627614, guid: dfc9a0e2d7c6288458d420cc7a5338c3, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3493453900446627614, guid: dfc9a0e2d7c6288458d420cc7a5338c3, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SetTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 3493453900446627614, guid: dfc9a0e2d7c6288458d420cc7a5338c3, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: UnityEngine.Animator, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3493453900446627614, guid: dfc9a0e2d7c6288458d420cc7a5338c3, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_StringArgument
+      value: Collected
+      objectReference: {fileID: 0}
+    - target: {fileID: 3493453900446627614, guid: dfc9a0e2d7c6288458d420cc7a5338c3, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
